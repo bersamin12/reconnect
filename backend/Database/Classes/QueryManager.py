@@ -173,3 +173,15 @@ class QueryManager:
         query = f'INSERT INTO "Posts" (person_name, post_title, post_body) VALUES (%s, %s, %s)'
         data = (person_name, post_title, post_body)
         return self.db.execute_change(query, data)
+    
+    def add_to_party(self, inviter, recipient):
+        query = f'SELECT MAX(party_id) FROM "Party"'
+        curr_party_id = self.db.execute_select(query)[0][0]
+        if not curr_party_id:
+            party_id = 1
+        else:
+            party_id = curr_party_id + 1
+        query = 'INSERT INTO "Party" (party_id, person_name) VALUES (%s, %s), (%s, %s)'
+        # query = 'DELETE FROM "Party"'
+        data = (party_id, inviter, party_id, recipient)
+        return self.db.execute_change(query, data)

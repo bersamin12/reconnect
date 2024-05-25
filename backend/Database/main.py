@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from urllib.error import HTTPError
+
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -122,7 +124,7 @@ async def login(user: UserLogin):
     if user_data and user_data['password'] == user.password:
         return {"message": "Login successful"}
     else:
-        raise HTTPException(status_code=401, detail="Invalid email or password")
+        return "Invalid email or password"
     
 @app.post("/create_user/")
 async def create_user(user: User):
@@ -162,3 +164,11 @@ class UserPoints(BaseModel):
 @app.post("/add_points/")
 async def add_points(user_points: UserPoints):
     return mc.add_points(user_points.person_name, user_points.added_points)
+
+class Invite(BaseModel):
+    inviter: str
+    recipient: str
+
+@app.post("/add_to_party/")
+async def add_to_party(invite: Invite):
+    return mc.add_to_party(invite.inviter, invite.recipient)

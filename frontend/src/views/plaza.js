@@ -1,11 +1,35 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import { Helmet } from 'react-helmet'
-
 import './plaza.css'
 
 const Plaza = (props) => {
+  
+  // Function to handle inviting friends to the party
+  const person_name = localStorage.getItem('username');
+  const inviteToParty = (friendName) => {
+    const inviterName = person_name.slice(1,-2); // Replace with the actual current user's name
+
+    fetch('http://localhost:8000/add_to_party/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        inviter: inviterName,
+        recipient: friendName,
+      }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      // You can add more logic here to handle the response if needed
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
+
   return (
     <div className="plaza-container">
       <Helmet>
@@ -137,6 +161,7 @@ const Plaza = (props) => {
           type="button"
           id="friend1button"
           className="plaza-button button"
+          onClick={() => inviteToParty('Qing Rong')}
         >
           Invite to Party
         </button>
@@ -144,6 +169,7 @@ const Plaza = (props) => {
           type="button"
           id="friend2button"
           className="plaza-button1 button"
+          onClick={() => inviteToParty('Selen')}
         >
           Invite to Party
         </button>
@@ -151,6 +177,7 @@ const Plaza = (props) => {
           type="button"
           id="friend3button"
           className="plaza-button2 button"
+          onClick={() => inviteToParty('Justin')}
         >
           Invite to Party
         </button>
@@ -185,3 +212,4 @@ const Plaza = (props) => {
 }
 
 export default Plaza
+

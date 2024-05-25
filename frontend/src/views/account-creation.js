@@ -26,6 +26,7 @@ const AccountCreation = () => {
       });
 
       if (response.ok) {
+        localStorage.setItem('username', JSON.stringify(personName));
         history.push('/character-creation');
       } else {
         console.error('Failed to create user');

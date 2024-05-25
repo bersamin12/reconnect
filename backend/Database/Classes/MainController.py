@@ -83,3 +83,6 @@ class MainController:
 
     def add_points(self, person_name, added_points):
         return self.qm.add_points(person_name, added_points)
+    
+    def add_to_party(self, inviter, recipient):
+        return self.qm.add_to_party(inviter, recipient)

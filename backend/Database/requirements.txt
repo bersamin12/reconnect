@@ -5,6 +5,7 @@ colorama==0.4.6
 fastapi==0.95.1
 h11==0.14.0
 httptools==0.5.0
+http-exceptions
 idna==3.4
 psycopg2-binary==2.9.6
 pydantic==1.10.7
