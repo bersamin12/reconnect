@@ -30,6 +30,23 @@ async def root():
 async def root():
     return mc.show_all()
 
+class CharacterCreationDetails(BaseModel):
+    username: str
+    character: str
+    age: str
+    area_of_work: str
+    area_of_interest: str
+
+@app.post("/create_character/")
+async def create_character(details: CharacterCreationDetails):
+    return mc.create_character(
+        details.username, 
+        details.character, 
+        details.age, 
+        details.area_of_work, 
+        details.area_of_interest
+    )
+
 # Activity
 class CreateActivity(BaseModel):
     person_id: int

@@ -20,6 +20,29 @@ class QueryManager:
         record = self.db.execute_select(query)
         return record
 
+    def create_tables(self):
+        query = '''
+        CREATE TABLE IF NOT EXISTS characters (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT NOT NULL,
+            character TEXT NOT NULL,
+            age TEXT NOT NULL,
+            area_of_work TEXT NOT NULL,
+            area_of_interest TEXT NOT NULL
+        )
+        '''
+        self.db.execute(query)
+        self.db.commit()
+
+    def create_character(self, username, character, age, area_of_work, area_of_interest):
+        query = '''
+        INSERT INTO characters (username, character, age, area_of_work, area_of_interest)
+        VALUES (?, ?, ?, ?, ?)
+        '''
+        params = (username, character, age, area_of_work, area_of_interest)
+        self.db.execute(query, params)
+        self.db.commit()
+        return {"message": "Character created successfully"}
     # Activity
 
     def create_activity(self, person_id, activity_name, category_id_list, location=None, lat=None, lon=None):

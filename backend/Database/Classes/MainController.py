@@ -19,6 +19,10 @@ class MainController:
         self.qm.insert_user()
         return {"message": "User Successfully Created"}
 
+    def create_character(self, username, character, age, area_of_work, area_of_interest):
+        return self.qm.create_character(username, character, age, area_of_work, area_of_interest)
+
+
     # Activity
 
     def create_activity(self, person_id, activity_name, category_id_list=None, location=None, lat=None, lon=None):
