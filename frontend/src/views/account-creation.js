@@ -1,11 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import './account-creation.css';
 
-import { Helmet } from 'react-helmet'
+const AccountCreation = () => {
+  const [personName, setPersonName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const history = useHistory();
 
-import './account-creation.css'
+  const handleSignUp = async () => {
+    const user = {
+      person_name: personName,
+      email: email,
+      password: password,
+    };
 
-const AccountCreation = (props) => {
+    try {
+      const response = await fetch('http://localhost:8000/create_user/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(user),
+      });
+
+      if (response.ok) {
+        history.push('/character-creation');
+      } else {
+        console.error('Failed to create user');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   return (
     <div className="account-creation-container">
       <Helmet>
@@ -16,30 +45,33 @@ const AccountCreation = (props) => {
         <input
           type="text"
           name="username"
-          required="true"
+          required
           placeholder="Choose a Username"
           className="account-creation-textinput input"
+          value={personName}
+          onChange={(e) => setPersonName(e.target.value)}
         />
         <input
           type="password"
           name="pw"
-          required="true"
+          required
           placeholder="Password"
           className="account-creation-textinput1 input"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <input
           type="email"
           name="email"
-          required="true"
+          required
           placeholder="Email"
           className="account-creation-textinput2 input"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <Link
-          to="/character-creation"
-          className="account-creation-navlink button"
-        >
+        <button onClick={handleSignUp} className="account-creation-navlink button">
           Sign up
-        </Link>
+        </button>
         <span className="account-creation-text">
           <span>Gamifying your volunteer experience</span>
         </span>
@@ -70,7 +102,7 @@ const AccountCreation = (props) => {
         </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AccountCreation
+export default AccountCreation;

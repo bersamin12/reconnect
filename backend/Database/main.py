@@ -1,15 +1,25 @@
-
-from Classes import MainController
-from Classes import ConfigManager
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from fastapi.middleware.cors import CORSMiddleware
+
+from Classes import MainController, ConfigManager
 
 ConfigManager(r"dev.config")
 app = FastAPI()
 mc = MainController()
 
+origins = [
+    "http://localhost:3000",  # Adjust this to your frontend URL
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
@@ -101,6 +111,19 @@ class User(BaseModel):
     email: str
     password: str
 
+# Define UserLogin model
+class UserLogin(BaseModel):
+    email: str
+    password: str
+
+@app.post("/login/")
+async def login(user: UserLogin):
+    user_data = mc.get_user_by_email(user.email)  # Assuming this method is implemented
+    if user_data and user_data['password'] == user.password:
+        return {"message": "Login successful"}
+    else:
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    
 @app.post("/create_user/")
 async def create_user(user: User):
     return mc.create_user(user.person_name, user.email, user.password)

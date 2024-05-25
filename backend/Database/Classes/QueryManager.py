@@ -130,31 +130,46 @@ class QueryManager:
         return self.db.execute_change(query)
 
     # Person
+    def get_user_by_email(self, email: str):
+        query = f'SELECT * FROM "Person" WHERE email=%s'
+        data = (email,)
+        result = self.db.execute_select(query, data)
+        return result[0] if result else None
 
     def create_user(self, person_name, email, password):
-        query = f"""INSERT INTO "Person" (person_name, email, password) VALUES ('{person_name}', '{email}', '{password}')"""
-        return self.db.execute_change(query)
-    
+        query = f'INSERT INTO "Person" (person_name, email, password) VALUES (%s, %s, %s)'
+        data = (person_name, email, password)
+        return self.db.execute_change(query, data)
+
     def obtain_person_id(self, person_name, password):
-        query = f"""SELECT person_id FROM "Person" WHERE person_name='{person_name}' AND password='{password}'"""
-        return self.db.execute_change(query)
-    
+        query = f'SELECT person_id FROM "Person" WHERE person_name=%s AND password=%s'
+        data = (person_name, password)
+        result = self.db.execute_select(query, data)
+        return result[0] if result else None
+
     def obtain_person_category(self, person_name):
-        query = f"""SELECT category_id FROM "Person" WHERE person_name='{person_name}'"""
-        return self.db.execute_change(query)
+        query = f'SELECT category_id FROM "Person" WHERE person_name=%s'
+        data = (person_name,)
+        return self.db.execute_select(query, data)
 
     def showpassword(self, person_name):
-        query = f"""SELECT password FROM "Person" WHERE person_name='{person_name}'"""
-        return self.db.execute_select(query)
-    
+        query = f'SELECT password FROM "Person" WHERE person_name=%s'
+        data = (person_name,)
+        result = self.db.execute_select(query, data)
+        return result[0]['password'] if result else None
+
     def create_sprite(self, person_name, sprite):
-        query = f"""UPDATE "Person" SET sprite='{sprite}' WHERE person_name='{person_name}'"""
-        return self.db.execute_change(query)
-    
+        query = f'UPDATE "Person" SET sprite=%s WHERE person_name=%s'
+        data = (sprite, person_name)
+        return self.db.execute_change(query, data)
+
     def add_points(self, person_name, added_points: int):
-        query = f"""UPDATE "Person" SET points = point + {added_points} WHERE person_name='{person_name}'"""
-        return self.db.execute_change(query)
-    
+        query = f'UPDATE "Person" SET points = points + %s WHERE person_name=%s'
+        data = (added_points, person_name)
+        return self.db.execute_change(query, data)
+
     # Post
     def create_post(self, person_name, post_title, post_body):
-        query = f"""INSERT INTO "Posts" """
+        query = f'INSERT INTO "Posts" (person_name, post_title, post_body) VALUES (%s, %s, %s)'
+        data = (person_name, post_title, post_body)
+        return self.db.execute_change(query, data)
