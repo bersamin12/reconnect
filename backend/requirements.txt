@@ -1,0 +1,11 @@
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Cors
+Flask-Bcrypt
+Flask-Login
+spacy
+scikit-learn
+pandas
+numpy
