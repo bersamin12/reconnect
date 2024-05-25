@@ -26,8 +26,21 @@ const AccountCreation = () => {
       });
 
       if (response.ok) {
-        localStorage.setItem('username', JSON.stringify(personName));
+        // Make another API call to get the person_name
+        const nameResponse = await fetch('http://localhost:8000/get_person_name/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email: email }),
+        });
+        if (nameResponse.ok) {
+          const nameData = await nameResponse.json();
+          localStorage.setItem('username', nameData); // Store person_name in local storage
         history.push('/character-creation');
+        } else {
+          setErrorMessage('Failed to retrieve user name.');
+        }
       } else {
         console.error('Failed to create user');
       }

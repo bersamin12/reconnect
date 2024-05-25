@@ -8,7 +8,7 @@ const Plaza = (props) => {
   // Function to handle inviting friends to the party
   const person_name = localStorage.getItem('username');
   const inviteToParty = (friendName) => {
-    const inviterName = person_name.slice; // Replace with the actual current user's name
+    const inviterName = person_name; // Replace with the actual current user's name
 
     fetch('http://localhost:8000/add_to_party/', {
       method: 'POST',

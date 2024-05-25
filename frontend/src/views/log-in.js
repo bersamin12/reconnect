@@ -38,7 +38,7 @@ const LogIn = (props) => {
         });
         if (nameResponse.ok) {
           const nameData = await nameResponse.json();
-          localStorage.setItem('username', nameData.person_name); // Store person_name in local storage
+          localStorage.setItem('username', nameData); // Store person_name in local storage
           history.push('/home');  // Redirect to a protected route or dashboard
         } else {
           setErrorMessage('Failed to retrieve user name.');

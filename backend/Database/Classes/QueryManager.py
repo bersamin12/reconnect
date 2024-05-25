@@ -183,7 +183,10 @@ class QueryManager:
             party_id = curr_party_id + 1
         query = 'INSERT INTO "Party" (party_id, person_name) VALUES (%s, %s), (%s, %s)'
         # query = 'DELETE FROM "Party"'
+        # query = 'SELECT * FROM "Party" WHERE person_name=%s'
+        # data = ('"2121"',)
         data = (party_id, inviter, party_id, recipient)
+        # print(self.db.execute_select(query, data))
         return self.db.execute_change(query, data)
     
     def get_person_name(self, email):
