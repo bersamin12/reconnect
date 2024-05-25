@@ -1,0 +1,233 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-home-page {
+  width: 100%;
+  height: 1275px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(0deg, rgba(169, 168, 220, 1) 0%, rgba(108, 105, 255, 1) 62%, rgba(65, 63, 153, 1) 100%);
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.home-text {
+  top: 788px;
+  color: rgb(255, 255, 255);
+  right: 127px;
+  width: auto;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-text01 {
+  top: 775px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  right: 0px;
+  width: auto;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-text05 {
+  color: rgb(255, 255, 255);
+  right: 0px;
+  width: auto;
+  bottom: 151px;
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  margin-top: auto;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: auto;
+  font-stretch: normal;
+  margin-right: 250px;
+  margin-bottom: auto;
+  text-decoration: none;
+}
+.home-navlink {
+  display: contents;
+}
+.home-image6 {
+  top: 593px;
+  left: 155px;
+  width: 148px;
+  height: 139px;
+  position: absolute;
+  text-decoration: none;
+}
+.home-text06 {
+  top: 775px;
+  left: 95px;
+  color: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-text10 {
+  left: 0px;
+  color: rgb(255, 255, 255);
+  width: auto;
+  bottom: 104px;
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  margin-top: auto;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 275px;
+  font-stretch: normal;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-decoration: none;
+}
+.home-text14 {
+  top: 458px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  right: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 55px;
+  font-style: Regular;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-text15 {
+  top: 177px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  right: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Regular;
+  text-align: center;
+  font-family: "VT323";
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-navlink1 {
+  display: contents;
+}
+.home-image7 {
+  top: 593px;
+  left: 0px;
+  right: 0px;
+  width: 141px;
+  height: 136px;
+  margin: auto;
+  position: absolute;
+  text-decoration: none;
+}
+.home-navlink2 {
+  display: contents;
+}
+.home-image8 {
+  top: 599px;
+  left: 901px;
+  width: 139px;
+  height: 145px;
+  position: absolute;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  margin-right: 160px;
+  text-decoration: none;
+}
+.home-navlink3 {
+  display: contents;
+}
+.home-image9 {
+  top: 924px;
+  left: 0px;
+  width: 143px;
+  height: 142px;
+  position: absolute;
+  margin-left: 350px;
+  text-decoration: none;
+}
+.home-navlink4 {
+  display: contents;
+}
+.home-image10 {
+  top: 938px;
+  right: 0px;
+  width: 121px;
+  height: 121px;
+  position: absolute;
+  align-self: flex-end;
+  margin-right: 300px;
+  text-decoration: none;
+}
+.home-button {
+  top: 49px;
+  right: 236px;
+  width: 136px;
+  height: 52px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+  border-width: 0px;
+  text-decoration: none;
+}
+.home-button1 {
+  top: 48px;
+  right: 71px;
+  width: 136px;
+  height: 52px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+  border-width: 0px;
+  text-decoration: none;
+}
