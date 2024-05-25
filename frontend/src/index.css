@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  @apply bg-gradient-to-t from-[#a9a8dc] via-[#6c69ff] to-[#413f99] text-[#c3c9ff] font-vt323 min-h-screen w-full flex flex-col items-center justify-center;
+}
+
+@layer utilities {
+  .stroke-2 {
+    -webkit-text-stroke-width: 2px;
+    text-stroke-width: 2px;
+  }
+
+  .stroke-[#EF9E9D] {
+    -webkit-text-stroke-color: #EF9E9D;
+    text-stroke-color: #EF9E9D;
+  }
+}

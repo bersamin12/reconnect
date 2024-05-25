@@ -1,0 +1,112 @@
+.log-in-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.log-in-text {
+  top: 260px;
+  left: 0px;
+  color: rgba(255, 220, 188, 1);
+  right: 0px;
+  width: 378px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 60px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  font-style: Regular;
+  text-align: center;
+  font-family: Cherry Bomb One;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.log-in-opening-page1 {
+  width: 100%;
+  height: 999px;
+  display: flex;
+  position: relative;
+  background: linear-gradient(0deg, rgba(169, 168, 220, 1) 0%, rgba(108, 105, 255, 1) 62%, rgba(65, 63, 153, 1) 100%);
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+.log-in-text2 {
+  top: 129px;
+  left: 0px;
+  color: rgb(255, 220, 188);
+  right: 0px;
+  width: auto;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 140px;
+  align-self: center;
+  font-style: Regular;
+  text-align: center;
+  font-family: "Cherry Bomb One";
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  animation-name: swing;
+  animation-delay: 0s;
+  text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 5;
+  animation-timing-function: ease;
+}
+.log-in-textinput {
+  top: 574px;
+  left: 367px;
+  width: 467px;
+  height: 58px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+}
+.log-in-textinput1 {
+  top: 453px;
+  left: 0px;
+  right: 0px;
+  width: 467px;
+  height: 58px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+}
+.log-in-button {
+  top: 726px;
+  left: 0px;
+  right: 0px;
+  width: 370px;
+  height: 48px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+}
+.log-in-text6 {
+  top: 635px;
+  left: 370px;
+  color: rgba(195, 201, 255, 1);
+  width: 329px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: left;
+  font-family: VT323;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
