@@ -154,3 +154,7 @@ class QueryManager:
     def add_points(self, person_name, added_points: int):
         query = f"""UPDATE "Person" SET points = point + {added_points} WHERE person_name='{person_name}'"""
         return self.db.execute_change(query)
+    
+    # Post
+    def create_post(self, person_name, post_title, post_body):
+        query = f"""INSERT INTO "Posts" """
