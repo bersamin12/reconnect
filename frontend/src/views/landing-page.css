@@ -90,14 +90,15 @@
   line-height: 150%;
   font-stretch: normal;
   text-decoration: none;
+  margin-left: 100px;
 }
 .landing-page-image4 {
-  top: 1683px;
+  top: 1600px;
   left: 0px;
   width: 150px;
   height: 142px;
   position: absolute;
-  margin-left: 200px;
+  margin-left: 400px;
 }
 .landing-page-myna-bird-spritebg2 {
   top: 967px;
@@ -106,6 +107,7 @@
   height: 242px;
   margin: auto;
   position: absolute;
+  margin-left: 150px;
 }
 .landing-page-container1 {
   flex: 0 0 auto;
@@ -117,7 +119,7 @@
   flex-direction: column;
 }
 .landing-page-text11 {
-  top: 1715px;
+  top: 1620px;
   color: rgb(255, 255, 255);
   right: 0px;
   width: auto;
@@ -147,21 +149,21 @@
   margin-right: 250px;
   margin-bottom: auto;
   text-decoration: none;
+  text-align: center;
 }
 .landing-page-button1 {
   top: 62px;
   right: 0px;
   width: 136px;
   height: 52px;
+  margin: auto;
   position: absolute;
   font-size: 25px;
-  margin-top: auto;
   font-family: "VT323";
-  margin-left: auto;
   border-width: 0px;
   margin-right: 50px;
-  margin-bottom: auto;
   text-decoration: none;
+  text-align: center;
 }
 .landing-page-button2 {
   left: 0px;
@@ -175,6 +177,7 @@
   font-family: "VT323";
   border-width: 0px;
   text-decoration: none;
+  text-align: center;
 }
 .landing-page-navlink {
   left: 0px;
@@ -188,10 +191,11 @@
   font-family: "VT323";
   border-width: 0px;
   text-decoration: none;
+  text-align: center;
 }
 .landing-page-image5 {
-  top: 2000px;
-  right: 150px;
+  top: 1900px;
+  right: 350px;
   width: 159px;
   height: 164px;
   position: absolute;
@@ -215,8 +219,8 @@
   text-decoration: none;
 }
 .landing-page-image3 {
-  top: 1269px;
-  left: 956px;
+  top: 1260px;
+  left: 1150px;
   width: 47px;
   height: 45px;
   position: absolute;
@@ -240,7 +244,7 @@
 }
 .landing-page-text24 {
   top: 1294px;
-  left: 895px;
+  left: 1100px;
   color: rgba(195, 201, 255, 1);
   width: auto;
   height: auto;
@@ -256,7 +260,7 @@
 }
 .landing-page-text26 {
   top: 1252px;
-  left: 839px;
+  left: 1030px;
   color: rgba(195, 201, 255, 1);
   width: auto;
   height: auto;
@@ -276,17 +280,18 @@
   width: 204px;
   height: 198px;
   position: absolute;
+  margin-left: 150px;
 }
 .landing-page-image2 {
   top: 1285px;
-  left: 720px;
+  left: 950px;
   width: 214px;
   height: 201px;
-  margin: auto;
   position: absolute;
+  margin-right: 150px;
 }
 .landing-page-text28 {
-  top: 2001px;
+  top: 1890px;
   left: 0px;
   color: rgba(255, 255, 255, 1);
   width: 600px;
@@ -308,4 +313,5 @@
   width: 200px;
   position: absolute;
   object-fit: cover;
+  margin-left: 100px;
 }

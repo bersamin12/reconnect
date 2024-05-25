@@ -14,11 +14,25 @@ const AccountCreation = (props) => {
       </Helmet>
       <div className="account-creation-signup">
         <input
+          type="text"
+          name="username"
+          required="true"
+          placeholder="Choose a Username"
+          className="account-creation-textinput input"
+        />
+        <input
+          type="password"
+          name="pw"
+          required="true"
+          placeholder="Password"
+          className="account-creation-textinput1 input"
+        />
+        <input
           type="email"
           name="email"
           required="true"
-          placeholder="email"
-          className="account-creation-textinput input"
+          placeholder="Email"
+          className="account-creation-textinput2 input"
         />
         <Link
           to="/character-creation"

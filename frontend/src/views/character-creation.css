@@ -46,12 +46,11 @@
   font-size: 25px;
   align-self: stretch;
   align-items: center;
-  flex-shrink: 0;
   font-family: "VT323";
   border-radius: 8px;
-  justify-content: center;
   text-decoration: none;
   background-color: rgba(119, 140, 205, 1);
+  text-align: center;
 }
 .character-creation-text {
   color: rgba(255, 255, 255, 1);
@@ -65,19 +64,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.character-creation-textinput {
-  top: 202px;
-  left: 0px;
-  right: 0px;
-  width: 631px;
-  height: 43px;
-  margin: auto;
-  position: absolute;
-  font-size: 25px;
-  font-family: "VT323";
-}
 .character-creation-text02 {
-  top: 279px;
+  top: 230px;
   left: 0px;
   color: rgb(255, 255, 255);
   right: 0px;
@@ -112,33 +100,6 @@
   font-weight: 400;
   line-height: normal;
   font-stretch: normal;
-  animation-name: swing;
-  animation-delay: 0s;
-  text-decoration: none;
-  animation-duration: 300ms;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: 5;
-  animation-timing-function: ease;
-}
-.character-creation-text06 {
-  top: 114px;
-  left: 0px;
-  color: rgb(255, 255, 255);
-  right: 0px;
-  width: auto;
-  height: auto;
-  margin: auto;
-  position: absolute;
-  font-size: 45px;
-  font-style: Regular;
-  text-align: center;
-  font-family: "VT323";
-  font-weight: 400;
-  line-height: 150%;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 0px;
-  font-stretch: normal;
-  border-radius: var(--dl-radius-radius-radius4);
   text-decoration: none;
 }
 .character-creation-text07 {

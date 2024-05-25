@@ -190,22 +190,6 @@
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
-.plaza-text06 {
-  top: 112px;
-  left: 542px;
-  color: #ffffff;
-  width: 124px;
-  height: auto;
-  position: absolute;
-  font-size: 45px;
-  font-style: Regular;
-  text-align: center;
-  font-family: VT323;
-  font-weight: 400;
-  line-height: 150%;
-  font-stretch: normal;
-  text-decoration: none;
-}
 .plaza-text08 {
   top: 179px;
   left: 0px;
@@ -226,6 +210,7 @@
 }
 .plaza-text09 {
   line-height: 100%;
+  top: 80px;
 }
 .plaza-text10 {
   line-height: 100%;
@@ -252,14 +237,14 @@
   text-decoration: none;
 }
 .plaza-image {
-  top: 294px;
+  top: 350px;
   left: 108px;
   width: 200px;
   position: absolute;
   object-fit: cover;
 }
 .plaza-image1 {
-  top: 301px;
+  top: 350px;
   left: 0px;
   right: 0px;
   width: 200px;
@@ -269,14 +254,14 @@
   object-fit: cover;
 }
 .plaza-image2 {
-  top: 302px;
+  top: 350px;
   right: 96px;
   width: 200px;
   position: absolute;
   object-fit: cover;
 }
 .plaza-text16 {
-  top: 512px;
+  top: 560px;
   left: 130px;
   color: rgb(195, 201, 255);
   width: auto;
@@ -292,7 +277,7 @@
   text-decoration: none;
 }
 .plaza-text17 {
-  top: 517px;
+  top: 560px;
   color: rgb(195, 201, 255);
   right: 151px;
   width: auto;
@@ -308,7 +293,7 @@
   text-decoration: none;
 }
 .plaza-text18 {
-  top: 514px;
+  top: 560px;
   left: 0px;
   color: rgb(195, 201, 255);
   right: 0px;
@@ -326,7 +311,7 @@
   text-decoration: none;
 }
 .plaza-button {
-  top: 627px;
+  top: 690px;
   left: 0px;
   position: absolute;
   font-size: 24px;
@@ -336,7 +321,7 @@
   margin-left: 125px;
 }
 .plaza-button1 {
-  top: 629px;
+  top: 690px;
   left: 0px;
   right: 0px;
   width: 186px;
@@ -348,7 +333,7 @@
   font-weight: 400;
 }
 .plaza-button2 {
-  top: 628px;
+  top: 690px;
   right: 0px;
   position: absolute;
   font-size: 24px;
@@ -358,7 +343,7 @@
   margin-right: 115px;
 }
 .plaza-text19 {
-  top: 559px;
+  top: 610px;
   left: 172px;
   color: rgb(195, 201, 255);
   width: auto;
@@ -374,7 +359,7 @@
   text-decoration: none;
 }
 .plaza-text20 {
-  top: 560px;
+  top: 610px;
   color: rgb(195, 201, 255);
   right: 168px;
   width: auto;
@@ -390,7 +375,7 @@
   text-decoration: none;
 }
 .plaza-text21 {
-  top: 558px;
+  top: 610px;
   left: 0px;
   color: rgb(195, 201, 255);
   right: 0px;
@@ -408,13 +393,14 @@
   text-decoration: none;
 }
 .plaza-textinput {
-  left: 0px;
+  left: 150px;
   bottom: 66px;
   position: absolute;
   margin-left: 400px;
+  font-family: "VT323";
 }
 .plaza-button3 {
-  right: 0px;
+  right: 150px;
   bottom: 62px;
   position: absolute;
   font-size: 24px;
@@ -422,7 +408,7 @@
   margin-right: 400px;
 }
 .plaza-button4 {
-  top: 713px;
+  top: 760px;
   left: 0px;
   right: 0px;
   width: 208px;

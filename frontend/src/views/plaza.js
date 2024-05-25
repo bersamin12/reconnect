@@ -92,9 +92,6 @@ const Plaza = (props) => {
             </div>
           </div>
         </header>
-        <span className="plaza-text06">
-          <span>Plaza</span>
-        </span>
         <span className="plaza-text08">
           <span className="plaza-text09">
             Check out how your friends are doing!

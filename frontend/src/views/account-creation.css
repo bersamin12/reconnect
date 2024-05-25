@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .account-creation-signup {
   width: 100%;
@@ -18,7 +19,29 @@
   justify-content: flex-start;
 }
 .account-creation-textinput {
-  top: 482px;
+  top: 660px;
+  left: 0px;
+  right: 0px;
+  width: 430px;
+  height: 65px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+}
+.account-creation-textinput1 {
+  top: 570px;
+  left: 0px;
+  right: 0px;
+  width: 430px;
+  height: 65px;
+  margin: auto;
+  position: absolute;
+  font-size: 25px;
+  font-family: "VT323";
+}
+.account-creation-textinput2 {
+  top: 480px;
   left: 0px;
   right: 0px;
   width: 430px;
@@ -29,10 +52,10 @@
   font-family: "VT323";
 }
 .account-creation-navlink {
-  top: 583px;
   left: 0px;
   right: 0px;
   width: 290px;
+  bottom: 145px;
   height: 53px;
   margin: auto;
   position: absolute;
@@ -59,10 +82,10 @@
   text-decoration: none;
 }
 .account-creation-text02 {
-  top: 670px;
+  top: 746px;
   left: 0px;
-  color: rgba(195, 201, 255, 1);
   right: 0px;
+  color: rgba(195, 201, 255, 1);
   width: 329px;
   height: auto;
   margin: auto;
@@ -79,6 +102,8 @@
 }
 .account-creation-text03 {
   color: rgba(195, 201, 255, 1);
+  left: 0px;
+  right: 0px;
 }
 .account-creation-text04 {
   color: rgba(0, 0, 0, 1);
@@ -103,13 +128,7 @@
   font-weight: 400;
   line-height: normal;
   font-stretch: normal;
-  animation-name: swing;
-  animation-delay: 0s;
   text-decoration: none;
-  animation-duration: 300ms;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: 5;
-  animation-timing-function: ease;
 }
 .account-creation-text08 {
   top: 403px;

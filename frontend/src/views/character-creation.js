@@ -23,27 +23,16 @@ const CharacterCreation = (props) => {
           src="/lizardbg13513-r9z-300w.png"
           className="character-creation-lizardbg1"
         />
-        <Link to="/" className="character-creation-sign-up-button">
+        <Link to="/home" className="character-creation-sign-up-button">
           <span className="character-creation-text">
             <span>Confirm</span>
           </span>
         </Link>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required="true"
-          placeholder="Input your name"
-          className="character-creation-textinput input"
-        />
         <span className="character-creation-text02">
           <span>Choose your </span>
           <span>starter character.</span>
         </span>
         <span className="character-creation-text05">ServeQuest</span>
-        <span className="character-creation-text06">
-          What should we call you?
-        </span>
         <span className="character-creation-text07">
           Tell us about yourself!
         </span>

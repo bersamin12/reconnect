@@ -243,13 +243,14 @@
   height: 37px;
   margin: auto;
   position: absolute;
+  font-family: "VT323";
+  font-size: 20px;
 }
 .rewards-text6 {
-  left: 0px;
   color: rgb(195, 201, 255);
   right: 0px;
   width: 100%;
-  bottom: 152px;
+  bottom: -150px;
   height: auto;
   margin: auto;
   position: absolute;

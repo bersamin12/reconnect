@@ -63,7 +63,8 @@
 }
 .log-in-textinput {
   top: 574px;
-  left: 367px;
+  left: 0px;
+  right: 0px;
   width: 467px;
   height: 58px;
   margin: auto;
@@ -95,7 +96,7 @@
 }
 .log-in-text6 {
   top: 635px;
-  left: 370px;
+  left: 505px;
   color: rgba(195, 201, 255, 1);
   width: 329px;
   height: auto;

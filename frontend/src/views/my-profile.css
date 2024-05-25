@@ -253,7 +253,7 @@
 }
 .my-profile-text10 {
   top: 461px;
-  left: 688px;
+  left: 830px;
   color: rgba(255, 255, 255, 1);
   width: auto;
   height: auto;
@@ -269,7 +269,7 @@
 }
 .my-profile-text12 {
   top: 484px;
-  left: 406px;
+  left: 535px;
   color: rgba(195, 201, 255, 1);
   width: auto;
   height: auto;
@@ -285,7 +285,7 @@
 }
 .my-profile-rectangle6 {
   top: 519px;
-  left: 399px;
+  left: 530px;
   width: 428px;
   height: 19px;
   position: absolute;
@@ -296,7 +296,7 @@
 }
 .my-profile-rectangle7 {
   top: 520px;
-  left: 400px;
+  left: 530px;
   width: 214px;
   height: 17px;
   position: absolute;
@@ -328,7 +328,7 @@
 .my-profile-textarea {
   top: 620px;
   left: 394px;
-  width: 603px;
+  width: 750px;
   height: 129px;
   position: absolute;
   font-size: 25px;
@@ -338,7 +338,7 @@
 .my-profile-rectangle5 {
   top: 811px;
   left: 397px;
-  width: 605px;
+  width: 750px;
   height: 124px;
   opacity: 0.5;
   position: absolute;
