@@ -72,6 +72,7 @@ def create_user():
         password = request.form['password']
         response = requests.post(f'{FASTAPI_BASE_URL}/create_user/', json={
             'person_name': person_name,
+            'email': eamil,
             'password': password
         })
     #     if response.status_code == 200:
