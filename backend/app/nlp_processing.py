@@ -1,10 +1,27 @@
 import spacy
+from spacy.matcher import Matcher
 
+# Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
+
+# Initialize the Matcher
+matcher = Matcher(nlp.vocab)
+
+# Define patterns for skills and interests
+patterns = [
+    {"label": "SKILL", "pattern": [{"LOWER": "python"}, {"LOWER": "programming"}]},
+    {"label": "INTEREST", "pattern": [{"LOWER": "data"}, {"LOWER": "science"}]}
+    # Add more patterns as needed
+]
+
+# Add patterns to the matcher
+for pattern in patterns:
+    matcher.add(pattern["label"], [pattern["pattern"]])
 
 def extract_skills_and_interests(text):
     doc = nlp(text)
-    skills_interests = [ent.text for ent in doc.ents if ent.label_ in ['SKILL', 'INTEREST']]
+    matches = matcher(doc)
+    skills_interests = [doc[start:end].text for match_id, start, end in matches]
     return skills_interests
 
 # Example usage
