@@ -185,3 +185,8 @@ class QueryManager:
         # query = 'DELETE FROM "Party"'
         data = (party_id, inviter, party_id, recipient)
         return self.db.execute_change(query, data)
+    
+    def get_person_name(self, email):
+        query = 'SELECT person_name from "Person" WHERE email=%s'
+        data = (email,)
+        return self.db.execute_select(query, data)

@@ -27,7 +27,22 @@ const LogIn = (props) => {
       if (response.ok) {
         const data = await response.json();
         alert(data.message);
-        history.push('/home');  // Redirect to a protected route or dashboard
+
+        // Make another API call to get the person_name
+        const nameResponse = await fetch('http://localhost:8000/get_person_name/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email: email }),
+        });
+        if (nameResponse.ok) {
+          const nameData = await nameResponse.json();
+          localStorage.setItem('username', nameData.person_name); // Store person_name in local storage
+          history.push('/home');  // Redirect to a protected route or dashboard
+        } else {
+          setErrorMessage('Failed to retrieve user name.');
+        }
       } else {
         setErrorMessage('Invalid email or password');
       }

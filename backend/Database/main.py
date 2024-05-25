@@ -172,3 +172,11 @@ class Invite(BaseModel):
 @app.post("/add_to_party/")
 async def add_to_party(invite: Invite):
     return mc.add_to_party(invite.inviter, invite.recipient)
+
+class Email(BaseModel):
+    email: str
+
+@app.post("/get_person_name/")
+async def get_person_name(email: Email):
+    print(mc.get_person_name(email.email))
+    return mc.get_person_name(email.email)[0][0]

@@ -86,3 +86,6 @@ class MainController:
     
     def add_to_party(self, inviter, recipient):
         return self.qm.add_to_party(inviter, recipient)
+
+    def get_person_name(self, email):
+        return self.qm.get_person_name(email)
