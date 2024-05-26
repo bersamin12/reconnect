@@ -95,11 +95,13 @@ const MyProfile = (props) => {
             </div>
           </div>
         </header>
+        
         <img
           src="https://play.teleporthq.io/static/svg/default-img.svg"
           alt="image"
           id="userpfp"
           className="my-profile-image thq-img-round"
+          accept="image/*"
         />
         <span className="my-profile-text06">
           <span>User</span>

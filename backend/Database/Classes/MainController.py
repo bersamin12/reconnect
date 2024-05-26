@@ -89,3 +89,6 @@ class MainController:
 
     def get_person_name(self, email):
         return self.qm.get_person_name(email)
+    
+    def update_person(self, person_name, age, sprite, work, interest):
+        return self.qm.update_person(person_name, age, sprite, work, interest)

@@ -180,3 +180,14 @@ class Email(BaseModel):
 async def get_person_name(email: Email):
     print(mc.get_person_name(email.email))
     return mc.get_person_name(email.email)[0][0]
+
+class Update(BaseModel):
+    person_name: str
+    age: int
+    sprite: str
+    work: str
+    interest: str
+
+@app.post("/update_person/")
+async def update_person(update: Update):
+    return mc.update_person(update.person_name, update.age, update.sprite, update.work, update.interest)

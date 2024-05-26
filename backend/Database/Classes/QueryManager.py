@@ -193,3 +193,8 @@ class QueryManager:
         query = 'SELECT person_name from "Person" WHERE email=%s'
         data = (email,)
         return self.db.execute_select(query, data)
+    
+    def update_person(self, person_name, age, sprite, work, interest):
+        query = 'UPDATE "Person" SET age=%s, sprite=%s, work=%s, interest=%s WHERE person_name=%s'
+        data = (age, sprite, work, interest, person_name)
+        return self.db.execute_change(query, data)

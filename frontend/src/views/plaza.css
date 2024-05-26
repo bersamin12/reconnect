@@ -17,6 +17,18 @@
   flex-shrink: 0;
   justify-content: flex-start;
 }
+
+.plaza-button4 {
+  top: 724px;
+  left: 359px;
+  width: 208px;
+  height: 49px;
+  margin: auto;
+  position: absolute;
+  font-size: 24px;
+  font-family: "VT323";
+}
+
 .plaza-navbar-interactive {
   top: 32px;
   right: -2px;
