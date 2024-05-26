@@ -38,11 +38,12 @@ Ensure you have the following installed on your system:
    ```bash
    psql -U postgres -d postgres -f db/AngelHackDB\ \(2\).sql
    ```
-### Setting Up the PostgreSQL
+### Setting Up the PostgreSQL easily
 1. **Create Database using uploaded SQL file in root dir**
 
 ### Setting Up the Explore ML
-
+1. C:\...\reconnect\backend\Database\Classes\MainController.py
+2. replace path for "opportunities_file" in line 149 with full path from C:\
 
 ### Setting Up the Backend
 refer to readme file in backend directory
@@ -53,7 +54,6 @@ refer to readme file in backend directory
    uvicorn main:app --reload
 
 ### Setting Up the Frontend
-
 1. **Navigate to the frontend directory:**
    ```bash
    python -m venv venv
