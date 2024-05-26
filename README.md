@@ -1,3 +1,5 @@
+## Demo: https://youtu.be/ISdjzbxdKUo
+
 # Project ServeQuest
 Team Reconnect
 
@@ -42,8 +44,8 @@ Ensure you have the following installed on your system:
 1. **Create Database using uploaded SQL file in root dir**
 
 ### Setting Up the Explore ML
-1. C:\...\reconnect\backend\Database\Classes\MainController.py
-2. replace path for "opportunities_file" in line 149 with full path from C:\
+1. **C:\...\reconnect\backend\Database\Classes\MainController.py**
+2. replace path for **"opportunities_file"** in line 149 with **full path** from C:\
 
 ### Setting Up the Backend
 refer to readme file in backend directory
