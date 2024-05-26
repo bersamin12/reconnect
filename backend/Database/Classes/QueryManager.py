@@ -221,3 +221,9 @@ class QueryManager:
         query = 'UPDATE "Person" SET age=%s, sprite=%s, work=%s, interest=%s WHERE person_name=%s'
         data = (age, sprite, work, interest, person_name)
         return self.db.execute_change(query, data)
+    
+    def obtain_info_for_activities(self, person_name):
+        query = 'SELECT age, work, interest from "Person" WHERE person_name=%s'
+        data = (person_name,)
+        print(self.db.execute_select(query, data))
+        return self.db.execute_select(query, data)
