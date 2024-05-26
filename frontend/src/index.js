@@ -19,14 +19,13 @@ import MyProfile from './views/my-profile'
 import AccountCreation from './views/account-creation'
 import CharacterCreation from './views/character-creation'
 import Home from './views/home'
-import Explore from './views/explore'
 import NotFound from './views/not-found'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={LandingPage} exact path="/landing-page" />
+        <Route component={LandingPage} exact path="/" />
         <Route component={LogIn} exact path="/log-in" />
         <Route component={Plaza} exact path="/plaza" />
         <Route component={Party} exact path="/party" />
@@ -36,8 +35,7 @@ const App = () => {
         <Route component={MyProfile} exact path="/my-profile" />
         <Route component={AccountCreation} exact path="/account-creation" />
         <Route component={CharacterCreation} exact path="/character-creation" />
-        <Route component={Home} exact path="/" />
-        <Route component={Explore} exact path="/explore" />
+        <Route component={Home} exact path="/home" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>

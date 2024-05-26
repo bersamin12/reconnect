@@ -59,11 +59,11 @@ const Upcoming = (props) => {
                 </div>
               </div>
               <nav className="upcoming-links1">
-                <span className="upcoming-text1">About</span>
-                <span className="upcoming-text2">Features</span>
-                <span className="upcoming-text3">Pricing</span>
-                <span className="upcoming-text4">Team</span>
-                <span className="upcoming-text5">Blog</span>
+                <span className="upcoming-text01">About</span>
+                <span className="upcoming-text02">Features</span>
+                <span className="upcoming-text03">Pricing</span>
+                <span className="upcoming-text04">Team</span>
+                <span className="upcoming-text05">Blog</span>
               </nav>
               <div className="upcoming-buttons">
                 <button className="upcoming-login button">Login</button>
@@ -92,14 +92,63 @@ const Upcoming = (props) => {
             </div>
           </div>
         </header>
-        <a
-          href="https://www.giving.sg/volunteer"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="upcoming-link button"
-        >
-          Check out recent volunteer activities available on giving.sg!
-        </a>
+        <span className="upcoming-text06">26 May 2024</span>
+        <span className="upcoming-text07">17 May 2024</span>
+        <span className="upcoming-text08">
+          <span>13 May 2024</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text11">9 spots left!</span>
+        <span className="upcoming-text12">5 spots left!</span>
+        <span className="upcoming-text13">
+          <span>3000</span>
+          <br></br>
+          <span>exp</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text18">
+          <span>4000</span>
+          <br></br>
+          <span>exp</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text23">
+          <span>3000</span>
+          <br></br>
+          <span>exp</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text28">
+          <span>Study Buddy / Marsiling</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text31">
+          <span>Food Distribution</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text34">
+          <span>Befriender for Seniors</span>
+          <br></br>
+        </span>
+        <span className="upcoming-text37">
+          <span>Upcoming volunteering events:</span>
+          <br></br>
+        </span>
+        <img
+          src="https://images.unsplash.com/photo-1575467678930-c7acd65d6470?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fCUyMGFzaWFuJTIwc2VuaW9yfGVufDB8fHx8MTcxNjY4NzM1NXww&amp;ixlib=rb-4.0.3&amp;w=300"
+          alt="image"
+          className="upcoming-image"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1609139003551-ee40f5f73ec0?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGZvb2QlMjBkaXN0cmlidXRpb258ZW58MHx8fHwxNzE2Njg3NzY5fDA&amp;ixlib=rb-4.0.3&amp;w=300"
+          alt="image"
+          className="upcoming-image1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE3fHxzdHVkeSUyMGJ1ZGR5fGVufDB8fHx8MTcxNjY4NzkxMHww&amp;ixlib=rb-4.0.3&amp;w=300"
+          alt="image"
+          className="upcoming-image2"
+        />
       </div>
     </div>
   )
