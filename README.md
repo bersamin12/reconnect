@@ -1,4 +1,5 @@
-# Reconnect Project
+# Project ServeQuest
+Team Reconnect
 
 ## Table of Contents
 
