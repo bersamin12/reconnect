@@ -203,8 +203,7 @@ const Plaza = (props) => {
           type="button"
           id="refreshfriend"
           className="plaza-button4 button"
-        >
-          See more friends
+        >See more friends
         </button>
 
         <Link to="/party" id="checkparty" className="plaza-navlink5 button">

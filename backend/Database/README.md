@@ -1,18 +1,3 @@
-# Eatsee DB
-
-This repository stores the backend of the Eatsee Telegram bot.
-The frontend is stored in [this repo](https://github.com/chuajunyu/eatseebot)
-
-## What this is
-
-This is a project made by me and some friends in our spare time before uni. Eatsee is a social meeting telegram bot which 
-matches users with other nearby users with similar food preferences, and offers food recommendations.
-
-## Features / Tech Stack
-
-- Backend RestAPI built with Python FastAPI
-- PostgreSQL Database 
-- Algorithm to search for nearest food places 
 
 ## Set-up instructions
 

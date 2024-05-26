@@ -20,6 +20,7 @@ import AccountCreation from './views/account-creation'
 import CharacterCreation from './views/character-creation'
 import Home from './views/home'
 import NotFound from './views/not-found'
+import explore
 
 const App = () => {
   return (

@@ -60,7 +60,7 @@ const CharacterCreation = (props) => {
       if (response.ok) {
         const data = await response.json();
         console.log('Character creation successful:', data);
-        history.push('/');  // Redirect to home or another page after successful creation
+        history.push('/explore');  // Redirect to home or another page after successful creation
       } else {
         console.error('Character creation failed:', response.statusText);
       }
