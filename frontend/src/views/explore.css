@@ -1,3 +1,14 @@
+.body {
+  background-color: #8e44ad;
+  /* Purple background for the page */
+  font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.activities-container {
+  margin-top: 20px;
+}
+
 .explore-container {
   width: 100%;
   display: flex;
@@ -315,4 +326,70 @@
   .explore-mobile-menu {
     padding: 16px;
   }
+}
+
+/* Style for activity blocks */
+.activity {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for activity title */
+.activity-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  /* Text color */
+}
+
+/* Style for activity description */
+.activity-description {
+  color: #666;
+  /* Text color */
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.activity:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Style for activity blocks */
+.activity {
+  background-color: #8e44ad;
+  /* Violet shade */
+  border: 1px solid #3498db;
+  /* Blue shade */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for activity title */
+.activity-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+  /* Text color */
+}
+
+/* Style for activity description */
+.activity-description {
+  color: #eee;
+  /* Text color */
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.activity:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
