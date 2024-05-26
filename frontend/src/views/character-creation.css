@@ -9,6 +9,7 @@
 }
 .character-creation-name-creation {
   width: 100%;
+  left: 500px;
   height: 1532px;
   display: flex;
   overflow: hidden;
@@ -20,7 +21,7 @@
 }
 .character-creation-select {
   top: 285px;
-  right: 314px;
+  right: 640px;
   position: absolute;
 }
 .character-creation-wildboarwhitebg1 {
@@ -39,7 +40,7 @@
   position: absolute;
 }
 .character-creation-textinput {
-  right: 479px;
+  right: 679px;
   bottom: 331px;
   position: absolute;
   font-size: 20px;
@@ -47,7 +48,7 @@
 }
 .character-creation-aow-dropdown {
   top: 957px;
-  left: 636px;
+  left: 800px;
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -267,7 +268,7 @@
 }
 .character-creation-aoi-dropdown {
   top: 960px;
-  left: 365px;
+  left: 465px;
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -487,7 +488,7 @@
 }
 .character-creation-sign-up-button {
   gap: 8px;
-  left: 472px;
+  left: 585px;
   width: 289px;
   bottom: 233px;
   height: 45px;
@@ -678,7 +679,7 @@
 .character-creation-text35 {
   top: 1105px;
   color: rgb(255, 255, 255);
-  right: 500px;
+  right: 690px;
   width: auto;
   height: auto;
   margin: auto;

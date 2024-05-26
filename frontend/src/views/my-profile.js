@@ -49,7 +49,7 @@ const MyProfile = (props) => {
               <div className="my-profile-top">
                 <img
                   alt="image"
-                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  src="https://static.vecteezy.com/system/resources/previews/013/483/677/original/8-bit-pixel-girl-black-shirts-women-pixels-for-game-assets-and-cross-stitch-patterns-in-illustrations-vector.jpg"
                   className="my-profile-logo"
                 />
                 <div
