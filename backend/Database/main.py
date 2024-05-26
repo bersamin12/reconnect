@@ -208,3 +208,16 @@ class Update(BaseModel):
 @app.post("/update_person/")
 async def update_person(update: Update):
     return mc.update_person(update.person_name, update.age, update.sprite, update.work, update.interest)
+
+class Activities(BaseModel):
+    age: int
+    interest: str
+    work: str
+
+@app.post("/find_activities/")
+async def find_activities(activities: Activities):
+    return mc.find_activities(activities.age, activities.interest, activities.work)
+
+@app.post("/obtain_info_for_activities/")
+async def obtain_info_for_activities(username_only: UsernameOnly):
+    return mc.obtain_info_for_activities(username_only.person_name)
